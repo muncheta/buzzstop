@@ -19,6 +19,10 @@
 		DA0C72D31970DD3F00375292 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C72BB1970DD3F00375292 /* UIKit.framework */; };
 		DA0C72DB1970DD3F00375292 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA0C72D91970DD3F00375292 /* InfoPlist.strings */; };
 		DA0C72DD1970DD3F00375292 /* BuzzStopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72DC1970DD3F00375292 /* BuzzStopTests.m */; };
+		DA0C72E71970DF2B00375292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0C72E61970DF2B00375292 /* Main.storyboard */; };
+		DA0C72EA1970DF9D00375292 /* MSStopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72E91970DF9D00375292 /* MSStopViewController.m */; };
+		DA0C72ED1970DFAE00375292 /* MSDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72EC1970DFAE00375292 /* MSDirector.m */; };
+		DA0C72F01970E19100375292 /* MSStop.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72EF1970E19100375292 /* MSStop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		DA0C72D81970DD3F00375292 /* BuzzStopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BuzzStopTests-Info.plist"; sourceTree = "<group>"; };
 		DA0C72DA1970DD3F00375292 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA0C72DC1970DD3F00375292 /* BuzzStopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuzzStopTests.m; sourceTree = "<group>"; };
+		DA0C72E61970DF2B00375292 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DA0C72E81970DF9D00375292 /* MSStopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStopViewController.h; sourceTree = "<group>"; };
+		DA0C72E91970DF9D00375292 /* MSStopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStopViewController.m; sourceTree = "<group>"; };
+		DA0C72EB1970DFAE00375292 /* MSDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDirector.h; sourceTree = "<group>"; };
+		DA0C72EC1970DFAE00375292 /* MSDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDirector.m; sourceTree = "<group>"; };
+		DA0C72EE1970E19100375292 /* MSStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStop.h; sourceTree = "<group>"; };
+		DA0C72EF1970E19100375292 /* MSStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +88,7 @@
 		DA0C72AB1970DD3F00375292 = {
 			isa = PBXGroup;
 			children = (
+				DA0C72E61970DF2B00375292 /* Main.storyboard */,
 				DA0C72BD1970DD3F00375292 /* BuzzStop */,
 				DA0C72D61970DD3F00375292 /* BuzzStopTests */,
 				DA0C72B61970DD3F00375292 /* Frameworks */,
@@ -111,6 +123,12 @@
 				DA0C72C71970DD3F00375292 /* MSAppDelegate.m */,
 				DA0C72C91970DD3F00375292 /* Images.xcassets */,
 				DA0C72BE1970DD3F00375292 /* Supporting Files */,
+				DA0C72E81970DF9D00375292 /* MSStopViewController.h */,
+				DA0C72E91970DF9D00375292 /* MSStopViewController.m */,
+				DA0C72EB1970DFAE00375292 /* MSDirector.h */,
+				DA0C72EC1970DFAE00375292 /* MSDirector.m */,
+				DA0C72EE1970E19100375292 /* MSStop.h */,
+				DA0C72EF1970E19100375292 /* MSStop.m */,
 			);
 			path = BuzzStop;
 			sourceTree = "<group>";
@@ -192,6 +210,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Alex Eckermann";
 				TargetAttributes = {
+					DA0C72B31970DD3F00375292 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					DA0C72CE1970DD3F00375292 = {
 						TestTargetID = DA0C72B31970DD3F00375292;
 					};
@@ -220,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0C72E71970DF2B00375292 /* Main.storyboard in Resources */,
 				DA0C72C21970DD3F00375292 /* InfoPlist.strings in Resources */,
 				DA0C72CA1970DD3F00375292 /* Images.xcassets in Resources */,
 			);
@@ -241,7 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA0C72C81970DD3F00375292 /* MSAppDelegate.m in Sources */,
+				DA0C72EA1970DF9D00375292 /* MSStopViewController.m in Sources */,
 				DA0C72C41970DD3F00375292 /* main.m in Sources */,
+				DA0C72F01970E19100375292 /* MSStop.m in Sources */,
+				DA0C72ED1970DFAE00375292 /* MSDirector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
