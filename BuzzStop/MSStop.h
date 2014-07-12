@@ -18,4 +18,11 @@
 @property (readonly, nonatomic) CLLocationCoordinate2D location;
 @property (readonly, nonatomic) BOOL wheelchairBoarding;
 
++ (MSStop *)cachedStopForIdentifier:(NSString *)identifier;
+
+- (NSString *)interestingDescription;
+- (NSArray *)nearbyAttractions;
+- (NSArray *)nextServices;
+- (instancetype)initWithJSONData:(NSDictionary *)json;
+
 @end

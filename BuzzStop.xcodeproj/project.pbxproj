@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0108373BCF964BDDAEEEFE04 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0986FF01F14846138571168D /* libPods.a */; };
 		DA0C72B81970DD3F00375292 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C72B71970DD3F00375292 /* Foundation.framework */; };
 		DA0C72BA1970DD3F00375292 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C72B91970DD3F00375292 /* CoreGraphics.framework */; };
 		DA0C72BC1970DD3F00375292 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C72BB1970DD3F00375292 /* UIKit.framework */; };
@@ -23,6 +24,17 @@
 		DA0C72EA1970DF9D00375292 /* MSStopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72E91970DF9D00375292 /* MSStopViewController.m */; };
 		DA0C72ED1970DFAE00375292 /* MSDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72EC1970DFAE00375292 /* MSDirector.m */; };
 		DA0C72F01970E19100375292 /* MSStop.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72EF1970E19100375292 /* MSStop.m */; };
+		DA0C72F31971039E00375292 /* MSAttraction.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72F21971039E00375292 /* MSAttraction.m */; };
+		DA0C72F6197103A800375292 /* MSService.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72F5197103A800375292 /* MSService.m */; };
+		DA0C72F9197103B000375292 /* MSTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72F8197103B000375292 /* MSTrip.m */; };
+		DA0C72FC197111A100375292 /* MSServiceBasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72FB197111A100375292 /* MSServiceBasicTableViewCell.m */; };
+		DA0C72FF1971140F00375292 /* MSLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72FE1971140F00375292 /* MSLoadingViewController.m */; };
+		DA8C154319712F61009892C1 /* MSStopTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C154219712F61009892C1 /* MSStopTimeTableViewCell.m */; };
+		DA8C154619714CCE009892C1 /* MSStopTime.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C154519714CCE009892C1 /* MSStopTime.m */; };
+		DA8C1549197181D7009892C1 /* MSStopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1548197181D7009892C1 /* MSStopDetailViewController.m */; };
+		DA8C154C19718423009892C1 /* MSStopNotificationActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C154B19718423009892C1 /* MSStopNotificationActionTableViewCell.m */; };
+		DA8C154F19718CFD009892C1 /* MSWelcomeAboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C154E19718CFD009892C1 /* MSWelcomeAboardViewController.m */; };
+		DAF71AF3197124CE00B30AF9 /* MSServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF71AF2197124CE00B30AF9 /* MSServiceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0986FF01F14846138571168D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D332DD9CCEC4C81AE0AEB30 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		DA0C72B41970DD3F00375292 /* BuzzStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0C72B71970DD3F00375292 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA0C72B91970DD3F00375292 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +73,28 @@
 		DA0C72EC1970DFAE00375292 /* MSDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDirector.m; sourceTree = "<group>"; };
 		DA0C72EE1970E19100375292 /* MSStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStop.h; sourceTree = "<group>"; };
 		DA0C72EF1970E19100375292 /* MSStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStop.m; sourceTree = "<group>"; };
+		DA0C72F11971039E00375292 /* MSAttraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAttraction.h; sourceTree = "<group>"; };
+		DA0C72F21971039E00375292 /* MSAttraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAttraction.m; sourceTree = "<group>"; };
+		DA0C72F4197103A800375292 /* MSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSService.h; sourceTree = "<group>"; };
+		DA0C72F5197103A800375292 /* MSService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSService.m; sourceTree = "<group>"; };
+		DA0C72F7197103B000375292 /* MSTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTrip.h; sourceTree = "<group>"; };
+		DA0C72F8197103B000375292 /* MSTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTrip.m; sourceTree = "<group>"; };
+		DA0C72FA197111A100375292 /* MSServiceBasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSServiceBasicTableViewCell.h; sourceTree = "<group>"; };
+		DA0C72FB197111A100375292 /* MSServiceBasicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSServiceBasicTableViewCell.m; sourceTree = "<group>"; };
+		DA0C72FD1971140F00375292 /* MSLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLoadingViewController.h; sourceTree = "<group>"; };
+		DA0C72FE1971140F00375292 /* MSLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLoadingViewController.m; sourceTree = "<group>"; };
+		DA8C154119712F61009892C1 /* MSStopTimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStopTimeTableViewCell.h; sourceTree = "<group>"; };
+		DA8C154219712F61009892C1 /* MSStopTimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStopTimeTableViewCell.m; sourceTree = "<group>"; };
+		DA8C154419714CCE009892C1 /* MSStopTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStopTime.h; sourceTree = "<group>"; };
+		DA8C154519714CCE009892C1 /* MSStopTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStopTime.m; sourceTree = "<group>"; };
+		DA8C1547197181D7009892C1 /* MSStopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStopDetailViewController.h; sourceTree = "<group>"; };
+		DA8C1548197181D7009892C1 /* MSStopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStopDetailViewController.m; sourceTree = "<group>"; };
+		DA8C154A19718423009892C1 /* MSStopNotificationActionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStopNotificationActionTableViewCell.h; sourceTree = "<group>"; };
+		DA8C154B19718423009892C1 /* MSStopNotificationActionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStopNotificationActionTableViewCell.m; sourceTree = "<group>"; };
+		DA8C154D19718CFD009892C1 /* MSWelcomeAboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWelcomeAboardViewController.h; sourceTree = "<group>"; };
+		DA8C154E19718CFD009892C1 /* MSWelcomeAboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWelcomeAboardViewController.m; sourceTree = "<group>"; };
+		DAF71AF1197124CE00B30AF9 /* MSServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSServiceViewController.h; sourceTree = "<group>"; };
+		DAF71AF2197124CE00B30AF9 /* MSServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSServiceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +105,7 @@
 				DA0C72BA1970DD3F00375292 /* CoreGraphics.framework in Frameworks */,
 				DA0C72BC1970DD3F00375292 /* UIKit.framework in Frameworks */,
 				DA0C72B81970DD3F00375292 /* Foundation.framework in Frameworks */,
+				0108373BCF964BDDAEEEFE04 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +130,7 @@
 				DA0C72D61970DD3F00375292 /* BuzzStopTests */,
 				DA0C72B61970DD3F00375292 /* Frameworks */,
 				DA0C72B51970DD3F00375292 /* Products */,
+				3D332DD9CCEC4C81AE0AEB30 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +150,7 @@
 				DA0C72B91970DD3F00375292 /* CoreGraphics.framework */,
 				DA0C72BB1970DD3F00375292 /* UIKit.framework */,
 				DA0C72D01970DD3F00375292 /* XCTest.framework */,
+				0986FF01F14846138571168D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +168,28 @@
 				DA0C72EC1970DFAE00375292 /* MSDirector.m */,
 				DA0C72EE1970E19100375292 /* MSStop.h */,
 				DA0C72EF1970E19100375292 /* MSStop.m */,
+				DA0C72F11971039E00375292 /* MSAttraction.h */,
+				DA0C72F21971039E00375292 /* MSAttraction.m */,
+				DA0C72F4197103A800375292 /* MSService.h */,
+				DA0C72F5197103A800375292 /* MSService.m */,
+				DA0C72F7197103B000375292 /* MSTrip.h */,
+				DA0C72F8197103B000375292 /* MSTrip.m */,
+				DA0C72FA197111A100375292 /* MSServiceBasicTableViewCell.h */,
+				DA0C72FB197111A100375292 /* MSServiceBasicTableViewCell.m */,
+				DA0C72FD1971140F00375292 /* MSLoadingViewController.h */,
+				DA0C72FE1971140F00375292 /* MSLoadingViewController.m */,
+				DAF71AF1197124CE00B30AF9 /* MSServiceViewController.h */,
+				DAF71AF2197124CE00B30AF9 /* MSServiceViewController.m */,
+				DA8C154119712F61009892C1 /* MSStopTimeTableViewCell.h */,
+				DA8C154219712F61009892C1 /* MSStopTimeTableViewCell.m */,
+				DA8C154419714CCE009892C1 /* MSStopTime.h */,
+				DA8C154519714CCE009892C1 /* MSStopTime.m */,
+				DA8C1547197181D7009892C1 /* MSStopDetailViewController.h */,
+				DA8C1548197181D7009892C1 /* MSStopDetailViewController.m */,
+				DA8C154A19718423009892C1 /* MSStopNotificationActionTableViewCell.h */,
+				DA8C154B19718423009892C1 /* MSStopNotificationActionTableViewCell.m */,
+				DA8C154D19718CFD009892C1 /* MSWelcomeAboardViewController.h */,
+				DA8C154E19718CFD009892C1 /* MSWelcomeAboardViewController.m */,
 			);
 			path = BuzzStop;
 			sourceTree = "<group>";
@@ -169,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA0C72E01970DD3F00375292 /* Build configuration list for PBXNativeTarget "BuzzStop" */;
 			buildPhases = (
+				49579B51993843208839643C /* Check Pods Manifest.lock */,
 				DA0C72B01970DD3F00375292 /* Sources */,
 				DA0C72B11970DD3F00375292 /* Frameworks */,
 				DA0C72B21970DD3F00375292 /* Resources */,
+				9FDB61F6D0124C5C839A515A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,15 +324,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49579B51993843208839643C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9FDB61F6D0124C5C839A515A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA0C72B01970DD3F00375292 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0C72F6197103A800375292 /* MSService.m in Sources */,
+				DA0C72F31971039E00375292 /* MSAttraction.m in Sources */,
+				DA8C154619714CCE009892C1 /* MSStopTime.m in Sources */,
+				DA8C154C19718423009892C1 /* MSStopNotificationActionTableViewCell.m in Sources */,
+				DA0C72F9197103B000375292 /* MSTrip.m in Sources */,
 				DA0C72C81970DD3F00375292 /* MSAppDelegate.m in Sources */,
+				DA8C154319712F61009892C1 /* MSStopTimeTableViewCell.m in Sources */,
 				DA0C72EA1970DF9D00375292 /* MSStopViewController.m in Sources */,
+				DA8C1549197181D7009892C1 /* MSStopDetailViewController.m in Sources */,
+				DA0C72FC197111A100375292 /* MSServiceBasicTableViewCell.m in Sources */,
 				DA0C72C41970DD3F00375292 /* main.m in Sources */,
+				DA0C72FF1971140F00375292 /* MSLoadingViewController.m in Sources */,
+				DAF71AF3197124CE00B30AF9 /* MSServiceViewController.m in Sources */,
 				DA0C72F01970E19100375292 /* MSStop.m in Sources */,
+				DA8C154F19718CFD009892C1 /* MSWelcomeAboardViewController.m in Sources */,
 				DA0C72ED1970DFAE00375292 /* MSDirector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +491,7 @@
 		};
 		DA0C72E11970DD3F00375292 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D332DD9CCEC4C81AE0AEB30 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -397,6 +505,7 @@
 		};
 		DA0C72E21970DD3F00375292 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D332DD9CCEC4C81AE0AEB30 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -467,6 +576,7 @@
 				DA0C72E21970DD3F00375292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA0C72E31970DD3F00375292 /* Build configuration list for PBXNativeTarget "BuzzStopTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +585,7 @@
 				DA0C72E51970DD3F00375292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

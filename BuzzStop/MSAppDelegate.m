@@ -8,14 +8,16 @@
 
 #import "MSAppDelegate.h"
 
+#import "MSDirector.h"
+#import "MSLoadingViewController.h"
+
 @implementation MSAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    MSDirector *director = [MSDirector sharedDirector];
+    [director startMonitoringForContext];
+    
     return YES;
 }
 

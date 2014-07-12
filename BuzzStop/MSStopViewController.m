@@ -8,8 +8,14 @@
 
 #import "MSStopViewController.h"
 
-@interface MSStopViewController ()
+#import "MSStop.h"
 
+#import "MSServiceBasicTableViewCell.h"
+#import "MSServiceViewController.h"
+
+@interface MSStopViewController ()
+@property (nonatomic, strong) NSArray *nextServices;
+@property (weak, nonatomic) MSService *selectedService;
 @end
 
 @implementation MSStopViewController
@@ -18,7 +24,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        self.nextServices = @[];
     }
     return self;
 }
@@ -27,11 +33,11 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.stopNameLabel.text = self.stop.name;
+    self.stopDetailLabel.text = self.stop.stopDescription;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.nextServices = self.stop.nextServices;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,30 +48,29 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.nextServices count];
 }
 
-/*
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Next services";
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    MSServiceBasicTableViewCell *cell = (MSServiceBasicTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"ServiceCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.service = self.nextServices[indexPath.row];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -105,15 +110,19 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString: @"SelectService"]) {
+        MSServiceBasicTableViewCell *serviceCell = (MSServiceBasicTableViewCell *)sender;
+        MSServiceViewController *serviceViewController = (MSServiceViewController *)segue.destinationViewController;
+        serviceViewController.service = serviceCell.service;
+        serviceViewController.originatingStop = self.stop;
+    }
+    
 }
-*/
+
 
 @end
