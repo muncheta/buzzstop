@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA0C72B81970DD3F00375292 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C72B71970DD3F00375292 /* Foundation.framework */; };
+		DA0C72BA1970DD3F00375292 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C72B91970DD3F00375292 /* CoreGraphics.framework */; };
+		DA0C72BC1970DD3F00375292 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C72BB1970DD3F00375292 /* UIKit.framework */; };
+		DA0C72C21970DD3F00375292 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA0C72C01970DD3F00375292 /* InfoPlist.strings */; };
+		DA0C72C41970DD3F00375292 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72C31970DD3F00375292 /* main.m */; };
+		DA0C72C81970DD3F00375292 /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72C71970DD3F00375292 /* MSAppDelegate.m */; };
+		DA0C72CA1970DD3F00375292 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0C72C91970DD3F00375292 /* Images.xcassets */; };
+		DA0C72D11970DD3F00375292 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C72D01970DD3F00375292 /* XCTest.framework */; };
+		DA0C72D21970DD3F00375292 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C72B71970DD3F00375292 /* Foundation.framework */; };
+		DA0C72D31970DD3F00375292 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C72BB1970DD3F00375292 /* UIKit.framework */; };
+		DA0C72DB1970DD3F00375292 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA0C72D91970DD3F00375292 /* InfoPlist.strings */; };
+		DA0C72DD1970DD3F00375292 /* BuzzStopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C72DC1970DD3F00375292 /* BuzzStopTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA0C72D41970DD3F00375292 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA0C72AC1970DD3F00375292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA0C72B31970DD3F00375292;
+			remoteInfo = BuzzStop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA0C72B41970DD3F00375292 /* BuzzStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0C72B71970DD3F00375292 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA0C72B91970DD3F00375292 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA0C72BB1970DD3F00375292 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA0C72BF1970DD3F00375292 /* BuzzStop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BuzzStop-Info.plist"; sourceTree = "<group>"; };
+		DA0C72C11970DD3F00375292 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA0C72C31970DD3F00375292 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA0C72C51970DD3F00375292 /* BuzzStop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BuzzStop-Prefix.pch"; sourceTree = "<group>"; };
+		DA0C72C61970DD3F00375292 /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
+		DA0C72C71970DD3F00375292 /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
+		DA0C72C91970DD3F00375292 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA0C72CF1970DD3F00375292 /* BuzzStopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzStopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0C72D01970DD3F00375292 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DA0C72D81970DD3F00375292 /* BuzzStopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BuzzStopTests-Info.plist"; sourceTree = "<group>"; };
+		DA0C72DA1970DD3F00375292 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA0C72DC1970DD3F00375292 /* BuzzStopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuzzStopTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA0C72B11970DD3F00375292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0C72BA1970DD3F00375292 /* CoreGraphics.framework in Frameworks */,
+				DA0C72BC1970DD3F00375292 /* UIKit.framework in Frameworks */,
+				DA0C72B81970DD3F00375292 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA0C72CC1970DD3F00375292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0C72D11970DD3F00375292 /* XCTest.framework in Frameworks */,
+				DA0C72D31970DD3F00375292 /* UIKit.framework in Frameworks */,
+				DA0C72D21970DD3F00375292 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA0C72AB1970DD3F00375292 = {
+			isa = PBXGroup;
+			children = (
+				DA0C72BD1970DD3F00375292 /* BuzzStop */,
+				DA0C72D61970DD3F00375292 /* BuzzStopTests */,
+				DA0C72B61970DD3F00375292 /* Frameworks */,
+				DA0C72B51970DD3F00375292 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA0C72B51970DD3F00375292 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA0C72B41970DD3F00375292 /* BuzzStop.app */,
+				DA0C72CF1970DD3F00375292 /* BuzzStopTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA0C72B61970DD3F00375292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA0C72B71970DD3F00375292 /* Foundation.framework */,
+				DA0C72B91970DD3F00375292 /* CoreGraphics.framework */,
+				DA0C72BB1970DD3F00375292 /* UIKit.framework */,
+				DA0C72D01970DD3F00375292 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA0C72BD1970DD3F00375292 /* BuzzStop */ = {
+			isa = PBXGroup;
+			children = (
+				DA0C72C61970DD3F00375292 /* MSAppDelegate.h */,
+				DA0C72C71970DD3F00375292 /* MSAppDelegate.m */,
+				DA0C72C91970DD3F00375292 /* Images.xcassets */,
+				DA0C72BE1970DD3F00375292 /* Supporting Files */,
+			);
+			path = BuzzStop;
+			sourceTree = "<group>";
+		};
+		DA0C72BE1970DD3F00375292 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA0C72BF1970DD3F00375292 /* BuzzStop-Info.plist */,
+				DA0C72C01970DD3F00375292 /* InfoPlist.strings */,
+				DA0C72C31970DD3F00375292 /* main.m */,
+				DA0C72C51970DD3F00375292 /* BuzzStop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA0C72D61970DD3F00375292 /* BuzzStopTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA0C72DC1970DD3F00375292 /* BuzzStopTests.m */,
+				DA0C72D71970DD3F00375292 /* Supporting Files */,
+			);
+			path = BuzzStopTests;
+			sourceTree = "<group>";
+		};
+		DA0C72D71970DD3F00375292 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA0C72D81970DD3F00375292 /* BuzzStopTests-Info.plist */,
+				DA0C72D91970DD3F00375292 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA0C72B31970DD3F00375292 /* BuzzStop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA0C72E01970DD3F00375292 /* Build configuration list for PBXNativeTarget "BuzzStop" */;
+			buildPhases = (
+				DA0C72B01970DD3F00375292 /* Sources */,
+				DA0C72B11970DD3F00375292 /* Frameworks */,
+				DA0C72B21970DD3F00375292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuzzStop;
+			productName = BuzzStop;
+			productReference = DA0C72B41970DD3F00375292 /* BuzzStop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA0C72CE1970DD3F00375292 /* BuzzStopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA0C72E31970DD3F00375292 /* Build configuration list for PBXNativeTarget "BuzzStopTests" */;
+			buildPhases = (
+				DA0C72CB1970DD3F00375292 /* Sources */,
+				DA0C72CC1970DD3F00375292 /* Frameworks */,
+				DA0C72CD1970DD3F00375292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA0C72D51970DD3F00375292 /* PBXTargetDependency */,
+			);
+			name = BuzzStopTests;
+			productName = BuzzStopTests;
+			productReference = DA0C72CF1970DD3F00375292 /* BuzzStopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA0C72AC1970DD3F00375292 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex Eckermann";
+				TargetAttributes = {
+					DA0C72CE1970DD3F00375292 = {
+						TestTargetID = DA0C72B31970DD3F00375292;
+					};
+				};
+			};
+			buildConfigurationList = DA0C72AF1970DD3F00375292 /* Build configuration list for PBXProject "BuzzStop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA0C72AB1970DD3F00375292;
+			productRefGroup = DA0C72B51970DD3F00375292 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA0C72B31970DD3F00375292 /* BuzzStop */,
+				DA0C72CE1970DD3F00375292 /* BuzzStopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA0C72B21970DD3F00375292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0C72C21970DD3F00375292 /* InfoPlist.strings in Resources */,
+				DA0C72CA1970DD3F00375292 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA0C72CD1970DD3F00375292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0C72DB1970DD3F00375292 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA0C72B01970DD3F00375292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0C72C81970DD3F00375292 /* MSAppDelegate.m in Sources */,
+				DA0C72C41970DD3F00375292 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA0C72CB1970DD3F00375292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0C72DD1970DD3F00375292 /* BuzzStopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA0C72D51970DD3F00375292 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA0C72B31970DD3F00375292 /* BuzzStop */;
+			targetProxy = DA0C72D41970DD3F00375292 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA0C72C01970DD3F00375292 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA0C72C11970DD3F00375292 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA0C72D91970DD3F00375292 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA0C72DA1970DD3F00375292 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA0C72DE1970DD3F00375292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA0C72DF1970DD3F00375292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA0C72E11970DD3F00375292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BuzzStop/BuzzStop-Prefix.pch";
+				INFOPLIST_FILE = "BuzzStop/BuzzStop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA0C72E21970DD3F00375292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BuzzStop/BuzzStop-Prefix.pch";
+				INFOPLIST_FILE = "BuzzStop/BuzzStop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DA0C72E41970DD3F00375292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BuzzStop.app/BuzzStop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BuzzStop/BuzzStop-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BuzzStopTests/BuzzStopTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DA0C72E51970DD3F00375292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BuzzStop.app/BuzzStop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BuzzStop/BuzzStop-Prefix.pch";
+				INFOPLIST_FILE = "BuzzStopTests/BuzzStopTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA0C72AF1970DD3F00375292 /* Build configuration list for PBXProject "BuzzStop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0C72DE1970DD3F00375292 /* Debug */,
+				DA0C72DF1970DD3F00375292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA0C72E01970DD3F00375292 /* Build configuration list for PBXNativeTarget "BuzzStop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0C72E11970DD3F00375292 /* Debug */,
+				DA0C72E21970DD3F00375292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA0C72E31970DD3F00375292 /* Build configuration list for PBXNativeTarget "BuzzStopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0C72E41970DD3F00375292 /* Debug */,
+				DA0C72E51970DD3F00375292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA0C72AC1970DD3F00375292 /* Project object */;
+}
