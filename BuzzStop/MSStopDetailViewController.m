@@ -107,6 +107,13 @@
     return @"Next services";
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 1 && self.nearbyAttractions && self.nearbyAttractions.count > 0) {
+        return 66.0f;
+    }
+    
+    return tableView.rowHeight;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
@@ -115,7 +122,7 @@
         return [self tableView:tableView attractionCellForIndexPath:indexPath];
     }
     
-    return nil;
+    return [self tableView:tableView serviceCellForIndexPath:indexPath];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView notificationCellForIndexPath:(NSIndexPath *)indexPath {
@@ -133,14 +140,22 @@
     cell.textLabel.text = attraction.name;
     cell.detailTextLabel.text = attraction.attractionDescription;
     cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
+    cell.detailTextLabel.numberOfLines = 2;
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, kNilOptions), ^{
-        NSData *imageData = [NSData dataWithContentsOfURL: attraction.imageURL];
-        if (imageData && imageData.length > 0) {
-            UIImage *image = [UIImage imageWithData: imageData];
-            cell.imageView.image = image;
-        }
-    });
+    if (!attraction.image) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, kNilOptions), ^{
+            NSData *imageData = [NSData dataWithContentsOfURL: attraction.imageURL];
+            if (imageData && imageData.length > 0) {
+                UIImage *image = [UIImage imageWithData: imageData];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    attraction.image = image;
+                    cell.imageView.image = image;
+                });
+            }
+        });
+    } else {
+        cell.imageView.image = attraction.image;
+    }
     
     return cell;
 }

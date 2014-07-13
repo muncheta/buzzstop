@@ -40,7 +40,7 @@
     
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     notification.alertBody = @"You are approaching your stop";
-    notification.fireDate = [NSDate dateWithTimeIntervalSinceNow: 10];
+    notification.fireDate = [NSDate dateWithTimeIntervalSinceNow: 35];
     
     [UIApplication.sharedApplication scheduleLocalNotification: notification];
     

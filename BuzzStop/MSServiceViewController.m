@@ -15,6 +15,7 @@
 #import "MSStop.h"
 #import "MSStopTimeTableViewCell.h"
 #import "MSWelcomeAboardViewController.h"
+#import "MSStopDetailViewController.h"
 
 @interface MSServiceViewController ()
 @property (strong, nonatomic) NSArray *tripStopTimes;
@@ -170,6 +171,10 @@
         MSWelcomeAboardViewController *welcomeAboardViewController = (MSWelcomeAboardViewController *)segue.destinationViewController;
         welcomeAboardViewController.blurredBackgroundImage = self.blurredContentImage;
         welcomeAboardViewController.service = self.service;
+    } else if ([segue.identifier isEqualToString:@"SelectStop"]) {
+        MSStopTimeTableViewCell *stopTimeCell = (MSStopTimeTableViewCell *)sender;
+        MSStopDetailViewController *stopDetailViewController = (MSStopDetailViewController *)segue.destinationViewController;
+        stopDetailViewController.stop = stopTimeCell.stopTime.stop;
     }
     
 }

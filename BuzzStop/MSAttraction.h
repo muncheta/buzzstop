@@ -14,6 +14,7 @@
 @property (strong, nonatomic) NSString *attractionDescription;
 @property (strong, nonatomic) NSNumber *distance;
 @property (strong, nonatomic) NSURL *imageURL;
+@property (strong, nonatomic) UIImage *image;
 
 - (instancetype)initWithJSONData:(NSDictionary *)json;
 
